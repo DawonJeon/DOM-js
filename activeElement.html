@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body onclick="myFunction()">
+    
+    <input type="text" value="input field">
+    <button>A button</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            const element = document.activeElement.tagName;
+            document.getElementById("demo").innerHTML = element;
+        }
+    </script>
+</body>
+</html>

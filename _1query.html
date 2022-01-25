@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM handling</title>
+</head>
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li id="activeI">JavaScript</li>
+    </ul>
+    <ol>
+        <li>HTML</li>
+        <li class="activeC">CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <script>
+        let li = document.querySelector('li'); //document.querySelector('~') : ~태그
+        li.style.color='red'
+        li = document.querySelector('#activeI');
+        li.style.color='green';
+        li = document.querySelector('.activeC');
+        li.style.color='blue'
+    </script>
+</body>
+</html>

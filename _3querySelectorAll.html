@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>HTML
+            <ul>
+                <li>클</li>
+                <li>로</li>
+                <li>이</li>
+            </ul>
+        </li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <ol>
+        <li>HTML</li>
+        <li class="active">CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <script>
+
+        /*let lis = document.querySelectorAll('li');
+        for(let name in lis){
+            lis[name].style.color='blue';
+        }*/
+
+        // let uls = document.querySelector('ul');
+        // let lis = uls.querySelectorAll('li');
+        // for(let name in lis){
+        //     lis[name].style.color = 'red';
+        // }
+
+        /*왜 querySelector('ul')중에서 querySelectorAll('li')는 먹히고
+        querySelectorAll('ul')중에서 querySelectorAll('li')는 안먹힐까?*/
+
+        let uls = document.querySelectorAll('ul');
+        let lis = uls[0].querySelectorAll('li');
+        for(let name in lis){
+            lis[name].style.color = 'red';
+        }
+    </script>
+</body>
+</html>
